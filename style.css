@@ -1,0 +1,130 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+   /* background: tomato; */
+}
+.jessica-logo{
+   width: 200px;
+}
+li{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.top-bar{
+   /* background-color: aqua; */
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+.top-bar ul{
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+   gap: 30px;
+   color: rgba(128, 0, 128, 0.608);
+}
+button{
+   
+   font-size: 20px;
+   padding: 10px;
+   margin-top: 15px;
+   margin-right: 10px;
+   border-radius: 10px;
+   background: none;
+   
+}
+.bnt{
+   background-color: rgba(93, 132, 147, 0.34);
+}
+
+#hero{
+   background-color:rgba(218, 21, 218, 0.674) ;
+   font-size: 30px;
+   color: aliceblue;
+   height: 60vh;
+   
+}
+.The-online-quiz-app{
+   margin: 50px;
+}
+ .The-online-quiz-app h2 {
+font-size: 50px;
+line-height: 1.8;
+}
+.The-online-quiz-app-phone{
+   margin-top: 50px;
+
+   height: 300px;
+}
+.second-hero-paragrap{
+   margin-top: 15px;
+}
+
+.hero-container{
+   display: flex;
+}
+.start-bnt{
+   margin-top: 80px;
+   background-color:rgba(67, 135, 162, 0.493) ;
+}
+.sponsors-logos{
+   width: 300px
+}
+.sponsors{
+display: flex;
+overflow: scroll;
+scrollbar-width: none;
+}
+.phones img{
+   width: 100px;
+}
+.build-host-play{
+   height: 500%;
+  background-color: rgba(192, 192, 192, 0.466);
+  color: rgb(20, 20, 46);
+  /* display: flex;
+  justify-content: center;
+   */
+  
+}
+.build-host-play-writes-up h2{
+   font-size: 40px;
+   padding-top: 80px;
+}
+.build-host-play-writes-up
+ p{ font-size: 25px;
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+ .phones-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 15px;
+   padding-top: 60px;
+
+ }
+ .phones h1{
+   font-size: 25px;
+   /* display: flex;
+   text-align: center; */
+ }
+
+ .phones p{
+   display: flex;
+   text-align: center;
+ }
+ /* footer{
+   background-color: aqua;
+ } */
+
