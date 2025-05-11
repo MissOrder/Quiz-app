@@ -1,0 +1,84 @@
+.hidden {
+    display: none;
+}
+.shown{
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #00b8db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
+}
+.quiz-container{
+    margin-top: 10%;
+background-color: #ba058db5;
+border-radius: 5px;
+box-shadow: 0 0 30px ;
+width: 300px;
+/* height: 300px; */
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+   p{
+
+    font-size:1.3em;
+    color: black;
+    padding-bottom: 15px;
+ }
+ .option{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+ }
+ .option li{
+    margin-bottom: 10px;
+ }
+ .option button{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(19, 4, 19, 0.762);
+    border-radius: 5px;
+    text-align: left;
+    background-color: silver;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3 ease;
+ }
+ .option button:hover{
+    background-color: rgb(233, 21, 233);
+ }
+
+
+/* Highlight selected answer */
+ .selected {
+    background-color: #4CAF50;
+    color: white; 
+} 
+
+
+
+ /*Restart button style */
+ .restart-btn, .end-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: wheat;
+    border: 1px solid black;
+
+} 
+.restart-btn, .end-bnt:hover{
+    background-color: #ddd;
+}

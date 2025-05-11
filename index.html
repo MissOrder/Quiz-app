@@ -1,89 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUIZ-APP</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="src/output.css" />
 </head>
 
 <body>
     <header>
-        <nav class="top-bar container">
-            <img class="jessica-logo" src="jessica-logo.png" alt="jessica-logo">
-            <ul>
-                <li>how it work</li>
+        <nav class="container flex items-center justify-between py-5">
+            <img class="jessica-logo w-40 tablet:w-60 laptop:w-80" src="images/jessica-logo.png" alt="jessica-logo" />
+            <ul class="text-cyan hidden laptop:flex items-center gap-8 text-xl font-semibold">
+                <li>How it work</li>
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
             </ul>
             <div>
-                <button><a href="#">Login/Play</a></button>
-                <button class="bnt"><a href="#">Try for free</a></button>
+                <button class="btn hover:border-cyan border-1 border-black bg-white text-black text-sm">
+                    Login / Play
+                </button>
+
+                <a href="quiz.html"
+                    class="btn hidden laptop:inline-block bg-cyan border-cyan hover:text-cyan border-1 text-white hover:bg-white">
+                    Try for free
+                </a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-container container">
-                <div class="The-online-quiz-app">
-                    <h2>The Online Quize App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.
+        <section id="hero" class="bg-pink text-3xl text-[aliceblue]">
+            <div
+                class="hero-container container flex flex-col-reverse laptop:flex-row items-center justify-between py-12">
+                <div class="laptop:w-[50%] py-7 text-2xl font-semibold">
+                    <h2 class="text-height text-5xl laptop:leading-loose mb-10 laptop:mb-0 font-bold">
+                        The Online Quiz App
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                        ipsum dolor sit amet.
                     </p>
 
-                    <p class="second-hero-paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur Lorem ipsum dolor sit amet consectetur adip</p>
-                    <button class="start-bnt"><a href="#">Get Started for Free</a></button>
+                    <p class="second-hero-paragraph mt-4 mb-12">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur Lorem ipsum dolor sit amet adip
+                    </p>
+
+                    <a class="btn bg-cyan border-0 shadow-md" href="quiz.html">Get Started for Free</a>
                 </div>
-                <img class="The-online-quiz-app-phone" src="phone2.webp" alt="#">
+                <img class="mx-16 h-[500px]" src="images/phone2.webp" alt="Kwizzbit Phone" />
             </div>
         </section>
 
-        <div class="sponsors container">
-            <div class="sponsors-logos"><img src="sticker1.webp" alt="sponsors-logos"></div>
-            <div class="sponsors-logos"><img src="sticker2.webp" alt="sponsors-logos"></div>
-            <div class="sponsors-logos"><img src="sticker3.webp" alt="sponsors-logos"></div>
-            <div class="sponsors-logos"><img src="sticker4.webp" alt="sponsors-logos"></div>
-            <div class="sponsors-logos"><img src="sticker5.webp" alt="sponsors-logos"></div>
-            <div class="sponsors-logos"><img src="sticker6.webp" alt="sponsors-logos"></div>
-        </div>
+        <marquee behavior="scroll" direction="left">
+            <div class="flex h-20 laptop:h-fit">
+                <img src="images/sticker1.webp" alt="sponsors-logos" />
 
-        <div class="build-host-play ">
-            <div class="container">
-                <div class="build-host-play-writes-up">
-                <h2> Build, host and play amazing smartphone quizzes in minutes</h2>
-                <p>Enjoy online,interactive quizzing with friends and family</p>
+                <img src="images/sticker2.webp" alt="sponsors-logos" />
+
+                <img src="images/sticker3.webp" alt="sponsors-logos" />
+
+                <img src="images/sticker4.webp" alt="sponsors-logos" />
+
+                <img src="images/sticker5.webp" alt="sponsors-logos" />
+
+                <img src="images/sticker6.webp" alt="sponsors-logos" />
             </div>
+        </marquee>
 
-                <div class="phones-container">
-                    <div class="phones-div1 phones">
-                        <img src="phone1.webp" alt="phone-image">
+        <section class="build-host-play bg-paleblue text-darkblue flex laptop:h-screen">
+            <div class="container py-12">
+                <div class="build-host-play-writes-up">
+                    <h2 class="text-center text-4xl font-semibold">
+                        Build, host and play amazing smartphone quizzes in minutes
+                    </h2>
+                    <p class="text-center text-2xl leading-loose">
+                        Enjoy online,interactive quizzing with friends and family
+                    </p>
+                </div>
+
+                <div class="phones-container mt-14 grid grid-cols-1 tablet:grid-cols-3 gap-y-4 tablet:gap-x-4">
+                    <div class="phone-1 phone">
+                        <img src="images/phone1.webp" alt="phone-image" />
                         <h1>Build</h1>
-                        <p>Create a quiz in minutes from over a <br>database of over 30,000 questions</p>
+                        <p>
+                            Create a quiz in minutes from over a
+                            <br />database of over 30,000 questions
+                        </p>
                     </div>
 
-                    <div class="phones-div2 phones">
-                        <img src="phone2.webp" alt="phone-image">
+                    <div class="phone-2 phone">
+                        <img src="images/phone2.webp" alt="phone-image" />
                         <h1>Host</h1>
-                        <p>Schedule and host live, virtual or hybrid<br> quizzes for your audience</p>
+                        <p>
+                            Schedule and host live, virtual or hybrid<br />
+                            quizzes for your audience
+                        </p>
                     </div>
 
-                    <div class="phones-div3 phones">
-                        <img src="phone3.webp" alt="phone-image">
+                    <div class="phone-3 phone">
+                        <img src="images/phone3.webp" alt="phone-image" />
                         <h1>Play</h1>
-                        <p>Enjoy dynamic speed-based smartphone<br> quizzing from anywhere in the world</p>
+                        <p>
+                            Enjoy dynamic speed-based smartphone<br />
+                            quizzing from anywhere in the world
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <h5>&CopyRight 2025 </h5>
-        <img src="jessica-logo.png" alt="">
+        <h5>&CopyRight 2025</h5>
+        <img src="images/jessica-logo.png" alt="" />
     </footer>
 </body>
 

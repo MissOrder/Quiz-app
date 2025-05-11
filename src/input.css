@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-tablet: 40rem;
+    --breakpoint-laptop: 64rem;
+    --breakpoint-desktop: 80rem;
+
+    --color-pink: #da15dd80;
+    --color-cyan: #00b8db;
+    --color-paleblue: #c0c0c077;
+    --color-darkblue: #14142e;
+}
+
+.container {
+    @apply m-auto w-[90vw] laptop:max-w-[1200px];
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+.btn {
+    @apply ml-3 cursor-pointer rounded-xl px-5 py-3 text-sm tablet:text-lg font-bold shadow-[#00000040] transition-all duration-300 hover:scale-105 hover:shadow-md;
+}
+
+.phone {
+    @apply flex flex-col items-center gap-3 text-center;
+}
+
+.phone img {
+    width: 150px;
+}
+
+.phone h1 {
+    font-size: 24px;
+}

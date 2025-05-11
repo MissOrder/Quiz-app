@@ -2,12 +2,12 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
    max-width: 1200px;
    margin: auto;
-   /* background: tomato; */
 }
 .jessica-logo{
    width: 200px;
@@ -19,7 +19,6 @@ a{
    text-decoration: none;
 }
 .top-bar{
-   /* background-color: aqua; */
    display: flex;
    justify-content: space-between;
    margin-top: 50px;
@@ -48,7 +47,7 @@ button{
 #hero{
    background-color:rgba(218, 21, 218, 0.674) ;
    font-size: 30px;
-   color: aliceblue;
+   color: black;
    height: 60vh;
    
 }
@@ -61,8 +60,8 @@ line-height: 1.8;
 }
 .The-online-quiz-app-phone{
    margin-top: 50px;
-
-   height: 300px;
+   width: 300px;
+   height: 350px;
 }
 .second-hero-paragrap{
    margin-top: 15px;
@@ -120,11 +119,14 @@ scrollbar-width: none;
    text-align: center; */
  }
 
- .phones p{
+ .phones {
    display: flex;
+   flex-direction: column;
+   align-items: center;
    text-align: center;
  }
- /* footer{
-   background-color: aqua;
- } */
+ footer{
+   background-color: rgba(13, 13, 66, 0.884);
+   color: aliceblue;
+ }
 
