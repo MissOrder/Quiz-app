@@ -28,7 +28,7 @@
 // improve code with more attribute
 
 const questions = document.querySelectorAll("section");
-const correctAnswer = ["A", "B", "A", "C", "D", "C", "A", "B", "D", "C"];
+const correctAnswer = ["A", "B", "B", "C", "D", "C", "A", "B", "D", "C"];
 let userAnswer = [];
 let currentQuestion = 0;
 // let currentQuestion = 0;
@@ -103,9 +103,9 @@ function showScore() {
   quizContainer.appendChild(endBtn);
 
   //   Show Score
-  const quizTitle = document.querySelector('h2')
+  const quizTitle = document.querySelector("h2");
   const scoreDisplay = document.createElement("h3");
-  scoreDisplay.classList.add("score")
+  scoreDisplay.classList.add("score");
   scoreDisplay.textContent = `${calculateScore(
     correctAnswer,
     userAnswer
@@ -143,7 +143,7 @@ function restartQuiz() {
   if (restartBtn) {
     restartBtn.remove();
     endBtn.remove();
-    score.remove()
+    score.remove();
   }
 
   //   Reset answers
